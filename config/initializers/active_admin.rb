@@ -1,5 +1,8 @@
+meta_tags_options = { viewport: 'width=device-width, initial-scale=1' }
 ActiveAdmin.setup do |config|
   # == Site Title
+  config.meta_tags = meta_tags_options
+  config.meta_tags_for_logged_out_pages = meta_tags_options
   #
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
